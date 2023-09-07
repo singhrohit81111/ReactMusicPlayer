@@ -48,7 +48,6 @@ const Footer: React.FC<FooterProps> = () => {
     
     const initialVal = () => {
         console.log(currentTime, duration, 'jhghjghngjhgj');
-
         if ((currentTime || duration) === 0) return 0;
         else { return (currentTime / duration) * 100; }
     }
@@ -86,7 +85,7 @@ const Footer: React.FC<FooterProps> = () => {
         <div className="footer">
             <div className="footerChildren">
                 <div id="rangeBar">
-                    <audio src={`${currentSong.filePath}`} ref={audioref} onTimeUpdate={handleTimeUpdate} autoPlay/>
+                    <audio src={`${currentSong.filePath}`} ref={audioref} onTimeUpdate={handleTimeUpdate}  autoPlay/>
                     <input type="range" min={0} max={100} value={initialVal()} className="range" style={{ color: 'black' }} onChange={handleChange} />
                 </div>
                 <div className="icons">
