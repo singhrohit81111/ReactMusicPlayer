@@ -1,0 +1,58 @@
+[
+    {
+        "songName": "Te amo",
+        "filePath": "https://pagalsong.in/uploads/systemuploads/mp3/Dum%20Maaro%20Dum/Te%20Amo.mp3",
+        "coverPhoto": "/pics/1.jpeg",
+        "totalTime": "4:46",
+        "meanTime":0,
+        "index":0
+    },
+    {
+        "songName": "SaudeBaazi",
+        "filePath": "https://pagalsong.in/uploads/systemuploads/mp3/Aakrosh/Sauda%20Hai%20Dil%20Ka%20Ye.mp3",
+        "coverPhoto": "/pics/2.jpeg",
+        "totalTime": "5:56",
+        "meanTime":0,
+        "index":1
+    },
+    {
+        "songName": "Tum se Hi",
+        "filePath": "https://pagalsong.in/uploads/systemuploads/mp3/Jab%20We%20Met/Tum%20Se%20Hi%20128%20Kbps.mp3",
+        "coverPhoto": "/pics/3.jpeg",
+        "totalTime": "5:23",
+        "meanTime":0,
+        "index":2
+    },
+    {
+        "songName": "Besabriyaan",
+        "filePath": "https://pagalsong.in/uploads/systemuploads/mp3/M.S.%20Dhoni%20-%20The%20Untold%20Story/Besabriyaan%20(M%20S%20Dhoni%20-%20The%20Untold%20Story)%20128.mp3",
+        "coverPhoto": "/pics/4.jpeg",
+        "totalTime": "4:15",
+        "meanTime":0,
+        "index":3
+    },
+    {
+        "songName": "Kahani Suno",
+        "filePath": "https://pagalsong.in/uploads/systemuploads/mp3/Kahani%20Suno%202.0%20-%20Kaifi%20Khalil/Kahani%20Suno%202.0%20-%20Kaifi%20Khalil%20128%20Kbps.mp3",
+        "coverPhoto": "/pics/5.jpeg",
+        "totalTime": "2:53",
+        "meanTime":0,
+        "index":4
+    },
+    {
+        "songName": "Jaane Kyun",
+        "filePath": "https://pagalsong.in/uploads/systemuploads/mp3/Dostana%20(2008)/Jaane%20Kyun%20[320%20kbps].mp3",
+        "coverPhoto": "/pics/6.jpeg",
+        "totalTime": "4:38",
+        "meanTime":0,
+        "index":5
+    },
+    {
+        "songName": "Saibo",
+        "filePath": "https://pagalsong.in/uploads/systemuploads/mp3/Shor%20in%20the%20City/Saibo%20-%20Shor%20in%20the%20City%20128%20Kbps.mp3",
+        "coverPhoto": "/pics/7.jpeg",
+        "totalTime": "3:15",
+        "meanTime":0,
+        "index":6
+    }
+]

@@ -1,0 +1,101 @@
+.footer {
+    .footerChildren {
+        display: grid;
+        place-items: center;
+
+        #rangeBar {
+            .range {
+                min-width: 99vw;
+            }
+            
+        }
+        .icons{
+            display: flex;
+        }
+        .icons{
+            display: flex;
+        }
+        .footerButtons {
+            height: 50px;
+            width: 50px;
+        }
+    }
+}
+
+.content {
+    display: flex;
+
+    .songs {
+
+        .songDetail {
+            display: flex;
+            margin: 10px 0px 0px 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            .song {
+                min-width: 18vw;
+                display: flex;
+                justify-content: space-between;
+                margin: 5px;
+                align-items: center;
+
+                .songImage {
+                    margin-top: 6px;
+
+                    img {
+                        border-radius: 50%;
+                        width: 35px;
+                    }
+                }
+            }
+
+            .remainingDetails {
+                display: flex;
+                margin: 5px;
+                min-width: 11vw;
+                justify-content: flex-end;
+                font-size: 13px;
+                align-items: center;
+
+                .songIcon {
+                    margin-top: 4px;
+
+                }
+            }
+
+        }
+    }
+}
+
+.currentSongImage {
+    margin-left: 27%;
+    img{
+        border-radius: 10px;
+        height: 61vh;
+    }
+}
+
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    min-height: 12vh;
+    .leftSide {
+        display: flex;
+        font-weight: bold;
+        font-size: 33px;
+        min-width: 26vw;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+
+    .rightSide {
+
+        img {
+            height: 51px;
+            margin: 8px 10px 0px 0px;
+
+        }
+    }
+}
