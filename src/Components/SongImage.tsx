@@ -33,7 +33,7 @@ export default function SongImage() {
   return (
     <div className='currentSongImage'>
       {data?<img src={data.coverPhoto} alt="No Image"/>:<div>No data</div>}
-      <div className=''>
+      <div className='songInfo'>
         <div>{data.songName}</div>
         <div>{data.totalTime}</div>
       </div>

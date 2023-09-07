@@ -1,18 +1,15 @@
-import { useEffect, useState } from 'react'
+
 import songs from '../data.json'
 import Footer from './Footer';
-import { BsFillPlayFill, BsFillPauseFill } from 'react-icons/bs';
 import SongImage from './SongImage';
 import Navbar from './Navbar';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { addSong } from '../Redux/Actions';
 
 function Home() {
   const dispatch = useDispatch();
-  const currentSong = useSelector((song: any) => { return song.songChange });
- 
-  const handleClick=(song:any)=>{
-   dispatch(addSong(song))
+  const handleClick = (song: any) => {
+    dispatch(addSong(song))
   }
 
   return (
@@ -29,7 +26,7 @@ function Home() {
               </div>
               <div className='remainingDetails'>
                 <div>{song.totalTime}</div>
-                
+
               </div>
             </div>
           })}

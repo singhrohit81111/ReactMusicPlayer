@@ -7,6 +7,9 @@
             .range {
                 min-width: 99vw;
             }
+            .range:hover{
+                cursor: pointer;
+            }
             
         }
         .icons{
@@ -64,6 +67,10 @@
             }
 
         }
+        .songDetail:hover{
+            background-color: grey;
+            cursor: pointer;
+        }
     }
 }
 
@@ -72,6 +79,12 @@
     img{
         border-radius: 10px;
         height: 61vh;
+    }
+    .songInfo{
+        font-size: 22px;
+        font-weight: 900;
+        display: flex;
+        justify-content: space-between;
     }
 }
 
