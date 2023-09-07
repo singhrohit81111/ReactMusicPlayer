@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './style.scss';
 import { useSelector } from 'react-redux';
-import ss from '../data.json';
+import songs from '../data.json';
 
 interface details{
   songName:string,
@@ -24,8 +24,8 @@ export default function SongImage() {
     index:0
   })
   useEffect(()=>{
-    var z=ss[currentSongDetails.index];
-    setData({...z})
+    var song=songs[currentSongDetails.index];
+    setData({...song})
     console.log(data);
     
   },[currentSongDetails])
