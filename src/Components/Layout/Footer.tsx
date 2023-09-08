@@ -3,8 +3,9 @@ import { AiFillBackward, AiFillForward } from 'react-icons/ai';
 import { BsFillPlayFill, BsFillPauseFill } from 'react-icons/bs';
 import '../Styles/style.scss';
 import { useDispatch, useSelector } from 'react-redux';
-import { decrement, increment} from '../../services/Redux/Actions';
+import { decrement, increment} from '@services/Redux/Actions';
 import songs from "../../data.json";
+import { RootState } from '@services/Redux/Store';
 
 interface FooterProps {
 
@@ -29,7 +30,7 @@ const Footer: React.FC<FooterProps> = () => {
         meanTime: 0,
         index: 0
     })
-    const music = useSelector((music:any) => music.songChange);
+    const music = useSelector((music:RootState) => music.songChange);
     
     const audioref = useRef<HTMLAudioElement>(null);
     const [isPlaying, setIsPlaying] = useState(music.playing);
