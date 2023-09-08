@@ -1,12 +1,20 @@
-import React from 'react'
 import { useDispatch } from 'react-redux';
-import { addSong } from '../Redux/Actions';
-import songs from '../data.json';
+import { addSong } from '../../services/Redux/Actions';
+import songs from '../../data.json';
 import SongImage from './SongImage';
+import '../Styles/style.scss';
 
+interface song {
+    songName: string,
+    filePath: string,
+    coverPhoto: string,
+    totalTime: string,
+    meanTime: number,
+    index: number
+}
 export default function Content() {
     const dispatch = useDispatch();
-    const handleClick = (song: any) => {
+    const handleClick = (song: song) => {
         dispatch(addSong(song))
     }
     return (

@@ -1,4 +1,5 @@
-import songs from '../data.json';
+import songs from '../../data.json';
+
 
 var songsLength = songs.length;
 const initialState = {

@@ -1,5 +1,5 @@
-import logo from '../assets/images/guitar.png'
-import './style.scss';
+import logo from '../../assets/images/guitar.png'
+import '../Styles/style.scss';
 
 export default function Navbar() {
     

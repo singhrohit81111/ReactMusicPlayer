@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import './style.scss';
+import '../Styles/style.scss';
 import { useSelector } from 'react-redux';
-import songs from '../data.json';
+import songs from '../../data.json';
 
 interface details{
   songName:string,
@@ -14,7 +14,6 @@ interface details{
 }
 export default function SongImage() {
   const currentSongDetails=useSelector((song:any)=>{return song.songChange});;
-  console.log(currentSongDetails.index);
   const[data,setData]=useState<details>({
     songName:"",
     filePath:"",
@@ -26,7 +25,6 @@ export default function SongImage() {
   useEffect(()=>{
     var song=songs[currentSongDetails.index];
     setData({...song})
-    console.log(data);
     
   },[currentSongDetails])
   

@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { AiFillBackward, AiFillForward } from 'react-icons/ai';
 import { BsFillPlayFill, BsFillPauseFill } from 'react-icons/bs';
-import './style.scss';
+import '../Styles/style.scss';
 import { useDispatch, useSelector } from 'react-redux';
-import { decrement, increment} from '../Redux/Actions';
-import songs from "../data.json";
+import { decrement, increment} from '../../services/Redux/Actions';
+import songs from "../../data.json";
 
 interface FooterProps {
 
@@ -29,25 +29,20 @@ const Footer: React.FC<FooterProps> = () => {
         meanTime: 0,
         index: 0
     })
-    const music = useSelector((music: any) => music.songChange);
-
+    const music = useSelector((music:any) => music.songChange);
+    
     const audioref = useRef<HTMLAudioElement>(null);
     const [isPlaying, setIsPlaying] = useState(music.playing);
     const [currentTime, setCurrentTime] = useState<number>(0);
     const [duration, setDuration] = useState<number>(0);
-    console.log(music);
 
     useEffect(() => {
         var z = songs[music.index];
         setCurrentSong({ ...z })
-        console.log(currentSong);
 
     }, [music])
-
-    console.log(currentSong);
     
     const initialVal = () => {
-        console.log(currentTime, duration, 'jhghjghngjhgj');
         if ((currentTime || duration) === 0) return 0;
         else { return (currentTime / duration) * 100; }
     }
@@ -61,16 +56,13 @@ const Footer: React.FC<FooterProps> = () => {
             setIsPlaying(false);
         }
     };
-    const handleChange = (e: any) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setStart(Number(e.target.value))
-        console.log(e.target.value);
         audioref.current!.currentTime = (Number(start) * Number(audioref.current!.duration)) / 100;
 
     }
     const handleTimeUpdate = () => {
-
         setCurrentTime(audioref.current!.currentTime);
-        console.log(audioref.current!.duration);
         setDuration(audioref.current!.duration);
     }
 
