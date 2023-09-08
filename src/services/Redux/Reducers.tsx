@@ -18,10 +18,10 @@ export const songChange = (state = initialState, action: any): any => {
             return { index: state.index - 1 };
         }
         case "decrement": {
-            if (state.index == songsLength-1) {
-                return { index: 0};
+            if (state.index == songsLength - 1) {
+                return { index: 0 };
             }
-            return { index: state.index +1 };
+            return { index: state.index + 1 };
         }
         default: return state;
     }

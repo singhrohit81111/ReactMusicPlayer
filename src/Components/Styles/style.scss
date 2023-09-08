@@ -7,17 +7,21 @@
             .range {
                 min-width: 99vw;
             }
-            .range:hover{
+
+            .range:hover {
                 cursor: pointer;
             }
-            
+
         }
-        .icons{
+
+        .icons {
             display: flex;
         }
-        .icons{
+
+        .icons {
             display: flex;
         }
+
         .footerButtons {
             height: 50px;
             width: 50px;
@@ -35,6 +39,7 @@
             margin: 10px 0px 0px 10px;
             border: 1px solid black;
             border-radius: 10px;
+
             .song {
                 min-width: 18vw;
                 display: flex;
@@ -67,7 +72,8 @@
             }
 
         }
-        .songDetail:hover{
+
+        .songDetail:hover {
             background-color: grey;
             cursor: pointer;
         }
@@ -76,11 +82,13 @@
 
 .currentSongImage {
     margin-left: 27%;
-    img{
+
+    img {
         border-radius: 10px;
         height: 61vh;
     }
-    .songInfo{
+
+    .songInfo {
         font-size: 22px;
         font-weight: 900;
         display: flex;
@@ -93,6 +101,7 @@
     display: flex;
     justify-content: space-between;
     min-height: 12vh;
+
     .leftSide {
         display: flex;
         font-weight: bold;
@@ -100,7 +109,7 @@
         min-width: 26vw;
         justify-content: space-around;
         align-items: center;
-        
+
     }
 
     .rightSide {
